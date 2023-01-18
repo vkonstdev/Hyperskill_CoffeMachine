@@ -13,9 +13,10 @@ public class Main {
         System.out.println("Write how many cups of coffee you will need:");
         int countCups = sc.nextInt();*/
         CoffeeMachine cm = new CoffeeMachine(400, 540, 120, 9, 550);
-        cm.printStateOfCoffeeMachine();
-        cm.chooseOperation();
-        cm.printStateOfCoffeeMachine();
+        while (true) {
+            cm.chooseOperation();
+        }
+        //cm.printStateOfCoffeeMachine();
 
     }
 }
